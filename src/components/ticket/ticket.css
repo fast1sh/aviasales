@@ -1,0 +1,114 @@
+.ticket {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(91, 137, 164, 0.25);
+  box-shadow: 0px 1px 4px 0px rgba(91, 137, 164, 0.25);
+}
+
+.ticket__left {
+  text-align: center;
+  padding: 25px 20px;
+  width: 35%;
+  border-right: 1px solid #eceff1;
+}
+
+.ticket__right {
+  padding: 34px 26px;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.ticket__image {
+  margin: 0 auto;
+  width: 120px;
+  height: 35px;
+  background-image: url(./img/air.png);
+}
+
+.ticket__button {
+  margin-top: 20px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 20px;
+  background-color: #ff6d00;
+  -webkit-box-shadow: 0px 1px 0px 0px #d64d08, 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 0px 0px #d64d08, 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.ticket__button:hover {
+  background-color: #ff8124;
+  box-shadow: 0px 1px 0px 0px #f7661d, 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.date__time {
+  margin-bottom: 6px;
+  color: #4a4a4a;
+  font-size: 32px;
+}
+
+.date__time_align-right {
+  text-align: right;
+}
+
+.date__place {
+  margin-bottom: 5px;
+  color: #4a4a4a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.date__day {
+  color: #8b9497;
+  font-size: 12px;
+}
+
+.stops {
+  padding-bottom: 7px;
+  color: #8b9497;
+  width: 96px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d2d5d6;
+  position: absolute;
+  left: 48%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.stops::after {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-image: url("./img/plane.svg");
+  position: absolute;
+  right: -15px;
+  bottom: -7px;
+}

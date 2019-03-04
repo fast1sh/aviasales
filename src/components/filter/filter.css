@@ -1,0 +1,127 @@
+.filter {
+  margin-right: 20px;
+  padding: 18px 16px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(91, 137, 164, 0.25);
+  box-shadow: 0px 1px 4px 0px rgba(91, 137, 164, 0.25);
+  border-radius: 5px;
+  max-width: 232px;
+  max-height: 300px;
+}
+
+.filter__radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter__title {
+  display: block;
+  margin-bottom: 17px;
+  color: #4a4a4a;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.radio {
+  margin-bottom: 33px;
+}
+
+.radio__label {
+  cursor: pointer;
+  display: block;
+  padding: 17px 22px;
+  border: 1px solid #d2d5d6;
+  color: #2196f3;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.radio__label:hover {
+  border-color: #64b5f5;
+  background-color: #f2fcff;
+}
+
+.radio__input:focus + .radio__label {
+  border-color: #64b5f5;
+  background-color: #f2fcff;
+}
+
+.radio__input:checked + .radio__label {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  color: #fff;
+}
+
+.radio:nth-child(1) > .radio__label {
+  border-radius: 5px 0 0 5px;
+  border-right-width: none;
+}
+
+.radio:nth-child(3) > .radio__label {
+  border-radius: 0 5px 5px 0;
+  border-left-width: none;
+}
+
+/* CHECKS */
+
+.check {
+  padding: 10px 0;
+  display: block;
+  color: #4a4a4a;
+  font-size: 13px;
+  margin-left: -16px;
+  padding-left: 45px;
+  width: calc(100% - 13px);
+  position: relative;
+}
+
+.check__button {
+  cursor: pointer;
+  background: transparent;
+  color: #2196f3;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  right: 15px;
+}
+
+.check__button:hover {
+  text-decoration: underline;
+}
+
+.check__input:focus + .check__box {
+  border-color: #2196f3;
+}
+
+.check__input:checked + .check__box {
+  border-color: #2196f3;
+  background: url("./img/check.svg") center no-repeat;
+}
+
+.check:hover {
+  cursor: pointer;
+  background-color: #f1fcff;
+}
+
+.check:hover .check__button {
+  display: block;
+}
+
+.check__box {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -30px;
+  border-radius: 3px;
+  border: 1px solid #d2d5d6;
+  border-style: solid;
+  background-color: #ffffff;
+  width: 19px;
+  height: 19px;
+}
+
+.check__button {
+  display: none;
+}
