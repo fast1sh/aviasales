@@ -3,9 +3,11 @@ import './row.css';
 
 const Row = ({left, right}) => {
   return (
-    <div className="row">
-      {left}
-      {right}
+    <div>
+      <div className="row container">
+        {left}
+        {right}
+      </div>
     </div>
   )
 };

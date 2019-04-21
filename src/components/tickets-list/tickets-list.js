@@ -126,7 +126,7 @@ export default class TicketsList extends Component {
 
         {ticketsContent}
 
-          </div>
+      </div>
     )
   }
 };

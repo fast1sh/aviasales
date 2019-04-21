@@ -112,3 +112,40 @@
   right: -15px;
   bottom: -7px;
 }
+
+@media (max-width: 876px) {
+  .ticket {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .ticket__left {
+    border: none;
+    display: flex;
+    width: 80%;
+  }
+
+  .ticket__button {
+    margin-top: 0;
+  }
+
+  .ticket__image {
+    margin-top: 12.5px;
+  }
+}
+
+@media (max-width: 752px) {
+  .filter {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .stops {
+    top: 10px;
+  }
+  .ticket__button {
+    padding: 10px 10px;
+  }
+}

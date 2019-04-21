@@ -1,8 +1,16 @@
 .row {
   padding-top: 200px;
-  max-width: 840px;
+  max-width: 870px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 752px ) {
+  .row {
+    flex-direction: column;
+  }
 }
